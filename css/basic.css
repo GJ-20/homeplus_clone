@@ -1,3 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul,dl,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 body{
     font-family: 'Noto Sans KR', sans-serif;
+}
+.top{
+   height:110px;
+
+}
+
+#hd{
+    border-bottom: 2px solid red;
+}
+
+.search{
+    border: 1px solid lightgray;
+    border-radius: 50px;
+}
+.search::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.search input{
+    float: left;
+    display: block;
+    width: 500px;
+    line-height: 40px;
+    border: none;
+    border-radius: 50px;
+}
+input[type="text"]::placeholder {
+    padding-left: 20px;
+    font-size: 1.1em;
+    
+}
+
+.search button{
+    float: left;
+    height: 40px;
+    background:none;
+    border: none;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.search button img{
+    display: block;
+    height: 30px;
+}
+
+.icons{
+    width: 14%;
+}
+
+/* ----nav------------ */
+
+.nav{
+    line-height: 50px;
+    
+    width: 1150px;
+}
+
+.nav ul li a{
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.nav ul li:first-child{
+    padding:0 45px 0px 45px;
+    background-color: #fe0505;
+    border-radius: 5px 50px 5px 5px;
+}
+
+.nav ul li:first-child a{
+    display: block;
+    color: white;
+    font-weight: bold;
+}
+
+
+.swiper{
+
+}
+
+.swiper img{
+    display: block;
+    margin:20px auto;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: white;
 }

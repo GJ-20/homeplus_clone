@@ -22,9 +22,9 @@
                 </h1>
                 <div class="search">
                     <input type="text" placeholder="검색어를 입력하세요">
-                    <button src="/img/search_FILL0_wght400_GRAD0_opsz48.png"></button>
+                    <button><img src="img/search_FILL0_wght400_GRAD0_opsz48.png" alt="검색"></button>
                 </div>
-                <div class="icons">
+                <div class="icons d-flex justify-content-between">
                     <a href="#none"><img src="img/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="계정"></a>
                     <a href="#none"><img src="img/person_FILL0_wght400_GRAD0_opsz48.svg" alt="로그인"></a>
                     <a href="#none"><img src="img/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg" alt="카트"></a>
@@ -32,6 +32,7 @@
             </div>
             <div class="nav">
                     <ul class="d-flex justify-content-between align-items-center">
+                        
                         <li><a href="#none">카테고리</a></li>
                         <li><a href="#none">전단행사</a></li>
                         <li><a href="#none">신상품</a></li>
@@ -46,7 +47,7 @@
             
         </div>
     </header>
-    <section id="banner">
+    <section id="banner container">
         <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -55,8 +56,7 @@
               <div class="swiper-slide"><img src="img/banner2.png" alt="배너2"></div>
               <div class="swiper-slide"><img src="img/banner3.jpeg" alt="배너3"></div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+    
           
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
@@ -88,8 +88,7 @@
               <div class="swiper-slide"><img src="img/minibanner2.jpeg" alt="배너2"></div>
               <div class="swiper-slide"><img src="img/minibanner3.jpeg" alt="배너3"></div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+         
           
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
@@ -233,6 +232,8 @@
     </section>
     </div>
     <script>
+
+
         const swiper = new Swiper('.swiper', {
   // Optional parameters
   autoplay: { delay: 3000,},
