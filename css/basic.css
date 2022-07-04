@@ -75,13 +75,13 @@ input[type="text"]::placeholder {
 .nav ul li a{
     display: block;
     font-size: 0.9rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .nav ul li:first-child{
     padding:0 45px 0px 45px;
     background-color: #fe0505;
-    border-radius: 5px 50px 5px 5px;
+    border-radius: 5px;
 }
 
 .nav ul li:first-child a{
@@ -90,9 +90,12 @@ input[type="text"]::placeholder {
     font-weight: bold;
 }
 
+#banner{
+    border-bottom: 1px solid lightgray;
+}
 
 .swiper{
-
+   
 }
 
 .swiper img{
@@ -102,4 +105,72 @@ input[type="text"]::placeholder {
 
 .swiper-button-prev, .swiper-button-next{
     color: white;
+}
+
+#corner{
+    width: 1100px;
+    margin: 40px auto 0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
+}
+#corner ul{
+
+}
+#corner a{
+    display: flex;
+    flex-direction: column;
+}
+
+#corner span{
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#corner li:nth-child(5) img,
+#corner li:nth-child(8) img{
+    margin-top: 20px;
+}
+
+#minibanner{
+    margin: 50px auto;
+}
+
+#saza img{
+    display: block;
+    margin: 0 auto 40px;
+}
+
+#ct{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#ct ul{
+    justify-content: space-evenly;
+    border-bottom: 1px solid lightgray;
+}
+#ct ul li a{
+    display: block;
+    line-height: 80px;
+    padding: 0 70px;
+    color: gray;
+    /* border-right: 1px solid lightgray; */
+}
+
+/* #ct ul li:last-child a{
+    border: none;
+} */
+
+#ct ul li:first-child {
+    border-bottom: 3px solid #fe0505;
+
+}
+
+#ct ul li:first-child a{
+    color: #fe0505;
+}
+
+#items{
+    margin-top: 20px;
 }
