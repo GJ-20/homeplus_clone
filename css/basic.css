@@ -66,25 +66,25 @@ input[type="text"]::placeholder {
 
 /* ----nav------------ */
 
-.nav{
+.navd{
     line-height: 50px;
-    
+    padding-top: 16px;
     width: 1150px;
 }
 
-.nav ul li a{
+.navd ul li a{
     display: block;
     font-size: 0.9rem;
     font-weight: 400;
 }
 
-.nav ul li:first-child{
+.navd ul li:first-child{
     padding:0 45px 0px 45px;
     background-color: #fe0505;
     border-radius: 5px;
 }
 
-.nav ul li:first-child a{
+.navd ul li:first-child a{
     display: block;
     color: white;
     font-weight: bold;
