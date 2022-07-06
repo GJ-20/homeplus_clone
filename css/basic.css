@@ -94,9 +94,7 @@ input[type="text"]::placeholder {
     border-bottom: 1px solid lightgray;
 }
 
-.swiper{
-   
-}
+
 
 .swiper img{
     display: block;
@@ -113,9 +111,7 @@ input[type="text"]::placeholder {
     padding-bottom: 40px;
     border-bottom: 1px solid #eee;
 }
-#corner ul{
 
-}
 #corner a{
     display: flex;
     flex-direction: column;
