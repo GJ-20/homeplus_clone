@@ -146,7 +146,7 @@ input[type="text"]::placeholder {
     text-align: center;
 }
 
-#ct .cts{
+/* #ct .cts{
     justify-content: space-evenly;
     border-bottom: 1px solid lightgray;
 }
@@ -155,15 +155,15 @@ input[type="text"]::placeholder {
     line-height: 80px;
     padding: 0 70px;
     color: gray;
-    /* border-right: 1px solid lightgray; */
-}
+    /* border-right: 1px solid lightgray;} */
+
 
 /* #ct ul li:last-child a{
     border: none;
 } */
 
 
-
+/* 
 #ct ul li input{
     display: none;
 }
@@ -173,15 +173,55 @@ input[type="text"]::placeholder {
     border-bottom: 3px solid #fe0505;
 }
 
-#items{
-   
+#ct ul li input:checked ~ ul{
+    z-index: 999;
+} */ 
+
+/* ////////////////////////////////// */
+
+
+.cts{
+    margin: 0 auto;
+}
+
+.cts >li {
+    width: 200px;
+    text-align: center;
+    line-height: 80px;
+}
+.cts >li >ul>li{
+    line-height: 30px;
+}
+
+.items{
+    display: none;
+    width: 1200px;
+    background-color: white;
+     top: 100%;
+     right: 0;
+     left: 0;
+     margin-top: 20px;
+     z-index: 10;
+     text-align: left;
+ }
+
+
+ .show .items{
+    display: block;
+
+ }
+
+/* ////////////////////////////////// */
+
+/* .items{
+   background-color: white;
     top: 100%;
     right: 0;
     left: 0;
     margin-top: 20px;
     z-index: 10;
     text-align: left;
-}
+} */
 #first{
     margin-bottom: 50px;
 }
@@ -202,8 +242,14 @@ input[type="text"]::placeholder {
 #first a:nth-child(2) span,
 #second a:nth-child(2) span{
     display: block;
-    padding-top: 10px;
+    font-size: 14px;
+    padding-top: 20px;
     color: #333;
+}
+
+#first br:nth-child(3),
+#second br:nth-child(3){
+    display: none;
 }
 
 #first span:nth-child(5),
@@ -237,11 +283,22 @@ input[type="text"]::placeholder {
     color: #bcbcbc
 }
 .button{
-    
+    display: absolute;
     top: 1300px;
     left: 0;
     right: 0;
-    
     z-index: 99;
+    width: 800px;
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: white;
 }
 
+.button img{
+    margin-right: 10px;
+}
+.button span{
+    font-weight: 300;
+    font-size: 17px;
+}

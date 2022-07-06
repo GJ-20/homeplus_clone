@@ -8,9 +8,20 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="plugin/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css/basic.css">
 
     <script src="plugin/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $("#page1").css("display","block")
+        $(".cts li:nth-child(2)").click(function(){
+            $("#page2").toggleClass("show")
+        })
+    })
+</script>
+
 </head>
 <body>
     
@@ -109,10 +120,10 @@
             <li><a href="#">생활용품</a></li>
         </ul> -->
 
-        <ul class="cts d-flex justify-content-between align-items-center">
+        <!-- <ul class="cts d-lg-flex justify-content-between align-items-center">
             <li><input type="radio" id="md" name="gener" checked>
                 <label for="md">MD추천</label>
-                <ul id="items" class="abs">
+                <ul id="items" class="">
                     <li>
                         <ul id="first" class="d-flex justify-content-between align-items-center">
                             <li>
@@ -200,7 +211,7 @@
                                         <span>원</span>
                                         <span>(100ML 당 216.5원)</span>
                                     </div>
-                                   
+                                    <br>
                                     <span>4.8(21건) 월 1,616개 구매</span>
                                     
                             </li>
@@ -254,6 +265,145 @@
             </li>
             <li><input type="radio" id="fresh" name="gener">
                 <label for="fresh">신선한</label>
+                <ul id="items" class="abs">
+                    <li>
+                        <ul id="first" class="d-flex justify-content-between align-items-center">
+                            <li>
+                                <a href="#">
+                                    <img src="img/item_7.jpeg" alt="체리">
+                                </a>
+                                <a href="#">
+                                    <span>당당 달콤 양념치킨</span>
+                                </a>   
+                                    <br>
+                                    <br>
+                                    <span></span> 
+                                    <br>
+                                    <div class="price">
+                                        <span><strong></strong></span>
+                                        <span>7500</span>
+                                        <span>원</span>
+                                        <span></span>
+                                    </div>
+                                  
+                                    <span>4.1(92건) 월 3,495개 구매</span>
+                                    
+        
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/item_8.jpeg" alt="고기">
+                                </a>
+                                <a href="#">
+                                    <span>온가족 닭볶음탕용 1.2KG(팩)</span>
+                                </a>
+                                <br>
+                                <br>
+                                    <span><strong>9,990</strong>원</span> 
+                                    <br>
+                                    <div class="price">
+                                        <span><strong>30</strong>%</span>
+                                        <span>6,990</span>
+                                        <span>원</span>
+                                        <span>(100G 당 582.5원)</span>
+                                    </div>
+                                    
+                                    <span>4.7(15,423건) 월 28,161개 구매</span>
+                                    
+                                  
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/item_9.jpeg" alt="쌀">
+                                </a>
+                                <a href="#">
+                                    <span>초당옥수수(개/국산)</span>
+                                </a>
+                                <br>
+                                <br>
+                                    <span></span> 
+                                    <br>
+                                    <div class="price">
+                                        <span><strong></strong></span>
+                                        <span>1,590</span>
+                                        <span>원</span>
+                                        <span></span>
+                                    </div>
+                                  
+                                    <span>4.6(4,949건) 월 99,999+개 구매</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul id="second" class="d-flex justify-content-between align-items-center">
+                            <li>
+                                <a href="#">
+                                    <img src="img/item_10.jpeg" alt="우유">
+                                </a>
+                                <a href="#">
+                                    <span>항공직송 생연어(횟감용) 노르웨이산/100G</span>
+                                </a>
+                                <br>
+                                <br>
+                                <span></span>
+                                    <div class="price">
+                                        <span></span>
+                                        <span>3,890</span>
+                                        <span>원</span>
+                                        <span>(100G 당 3,890원)</span>
+                                    </div>
+                                    <br>
+                                    <span>4.6(9,316건) 월 32,241개 구매</span>
+                                    
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/item_11.jpeg" alt="꼼장어볶음">
+                                </a>
+                                <a href="#">
+                                   
+                                    <span>[몽블랑제]갈릭 찰파이 8입</span>
+                                </a>
+                                <br>
+                                <br>
+                                    <span><strong>6,490</strong>원</span> 
+                                    <br>
+                                    <div class="price">
+                                        <span><strong>30</strong>%</span>
+                                        <span>4,490</span>
+                                        <span>원</span>
+                                        <span>(1개당 561.3원)</span>
+                                    </div>
+                                  
+                                    <span>47(4,087건) 월 1,659개 구매</span>
+                                    
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/item_12.jpeg" alt="고기">
+                                </a>
+                                <a href="#">
+                                    
+                                    <span>부드러운 복숭아 1.5KG(박스)</span>
+                                </a>
+                                <br>
+                                <br>
+                                    <span><strong>14,990</strong>원</span> 
+                                    <br>
+                                    <div class="price">
+                                        <span><strong>26</strong>%</span>
+                                        <span>10,990</span>
+                                        <span>원</span>
+                                        <span>(100G 당 732.7원)</span>
+                                    </div>
+                                   
+                                    <span>4.3(2,630건) 월 13,904개 구매</span>
+                                    
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </li>
             <li><input type="radio" id="food" name="gener">
                 <label for="food">식품</label>
@@ -267,14 +417,323 @@
             <li><input type="radio" id="item" name="gener">
                 <label for="item">생활용품</label>
             </li>
+        </ul> -->
+
+        <ul class="cts d-lg-flex justify-content-evenly align-items-start">
+            <li>
+                <span>MD추천</span>
+
+
+            </li>
+            <li>
+                <span>신선한</span>
+                
+
+            </li>
+            <li>
+                <span>식품</span>
+              
+ 
+            </li>
+            <li><span>간편한</span>
+            </li>
+            <li><span>가공필템</span>
+                
+            </li>
+            <li><span>생활용품</span>
+             
+            </li>
         </ul>
 
-        <div class="button abs">
-            <img src="img/refresh.svg" alt="리프레쉬">
-            <span><strong>다음 상품</strong>새로보기<strong>1</strong>/6</span>
-        </div>
+
+        <ul id="page1" class="items">
+            <li>
+                <ul id="first" class="d-flex justify-content-between align-items-center">
+                    <li>
+                        <a href="#">
+                            <img src="img/item_1.jpeg" alt="체리">
+                        </a>
+                        <a href="#">
+                            <span>항공직송 체리(미국산)300g(팩)</span>
+                        </a>   
+                            <br>
+                            <br>
+                            <span><strong>12,990</strong>원</span> 
+                            <br>
+                            <div class="price">
+                                <span><strong>38</strong>%</span>
+                                <span>7990</span>
+                                <span>원</span>
+                                <span>(100G 당 2,6663.3원)</span>
+                            </div>
+                          
+                            <span>4.4(10건) 월 1,535개 구매</span>
+                            
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/item_2.jpeg" alt="고기">
+                        </a>
+                        <a href="#">
+                            <span>보리먹고 자란 돼지 삼겹살(캐나다산) 100G/돼지고기</span>
+                        </a>
+                        <br>
+                        <br>
+                            <span><strong>1,980</strong>원</span> 
+                            <br>
+                            <div class="price">
+                                <span><strong>30</strong>%</span>
+                                <span>1,380</span>
+                                <span>원</span>
+                                <span>(100G 당 1,380원)</span>
+                            </div>
+                            
+                            <span>4.6(15,475건) 월 99,999+개 구매</span>
+                            
+                          
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/item_3.jpeg" alt="쌀">
+                        </a>
+                        <a href="#">
+                            <span>[특등급]대왕님표 여주쌀 10KG</span>
+                        </a>
+                        <br>
+                        <br>
+                            <span><strong>44,900</strong>원</span> 
+                            <br>
+                            <div class="price">
+                                <span><strong>35</strong>%</span>
+                                <span>28,900</span>
+                                <span>원</span>
+                                <span>(100G 당 289원)</span>
+                            </div>
+                          
+                            <span>4.8(1,654건) 월 13,888개 구매</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul id="second" class="d-flex justify-content-between align-items-center">
+                    <li>
+                        <a href="#">
+                            <img src="img/item_4.jpeg" alt="우유">
+                        </a>
+                        <a href="#">
+                            <span>부산 NC다이노스 1A우유 2.3L</span>
+                        </a>
+                        <br>
+                        <br>
+                        <span></span>
+                            <div class="price">
+                                <span></span>
+                                <span>4,980</span>
+                                <span>원</span>
+                                <span>(100ML 당 216.5원)</span>
+                            </div>
+                            <br>
+                            <span>4.8(21건) 월 1,616개 구매</span>
+                            
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/item_5.jpeg" alt="꼼장어볶음">
+                        </a>
+                        <a href="#">
+                           
+                            <span>[밀키트]참이슬 꼼장어볶음 400G(팩)</span>
+                        </a>
+                        <br>
+                        <br>
+                            <span><strong>11,900</strong>원</span> 
+                            <br>
+                            <div class="price">
+                                <span><strong>20</strong>%</span>
+                                <span>9,520</span>
+                                <span>원</span>
+                                <span>(100G 당 2,380원)</span>
+                            </div>
+                          
+                            <span>5(1건) 월 132개 구매</span>
+                            
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/itme_6.jpeg" alt="고기">
+                        </a>
+                        <a href="#">
+                            
+                            <span>동서 맥심 모카골드믹스 미니언즈기획팩 200T (2400G)</span>
+                        </a>
+                        <br>
+                        <br>
+                            <span></span> 
+                            <br>
+                            <div class="price">
+                                <span></span>
+                                <span>24,580</span>
+                                <span>원</span>
+                                <span>(100G 당 1,024.2원)</span>
+                            </div>
+                           
+                            <span>4.5(219건) 월 901개 구매</span>
+                            
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul id="page2" class="items">
+            <li>
+                <ul id="first" class="d-flex justify-content-between align-items-center">
+                    <li>
+                        <a href="#">
+                            <img src="img/item_7.jpeg" alt="체리">
+                        </a>
+                        <a href="#">
+                            <span>당당 달콤 양념치킨</span>
+                        </a>   
+                            <br>
+                            <br>
+                            <span></span> 
+                            <br>
+                            <div class="price">
+                                <span><strong></strong></span>
+                                <span>7500</span>
+                                <span>원</span>
+                                <span></span>
+                            </div>
+                          
+                            <span>4.1(92건) 월 3,495개 구매</span>
+                            
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/item_8.jpeg" alt="고기">
+                        </a>
+                        <a href="#">
+                            <span>온가족 닭볶음탕용 1.2KG(팩)</span>
+                        </a>
+                        <br>
+                        <br>
+                            <span><strong>9,990</strong>원</span> 
+                            <br>
+                            <div class="price">
+                                <span><strong>30</strong>%</span>
+                                <span>6,990</span>
+                                <span>원</span>
+                                <span>(100G 당 582.5원)</span>
+                            </div>
+                            
+                            <span>4.7(15,423건) 월 28,161개 구매</span>
+                            
+                          
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/item_9.jpeg" alt="쌀">
+                        </a>
+                        <a href="#">
+                            <span>초당옥수수(개/국산)</span>
+                        </a>
+                        <br>
+                        <br>
+                            <span></span> 
+                            <br>
+                            <div class="price">
+                                <span><strong></strong></span>
+                                <span>1,590</span>
+                                <span>원</span>
+                                <span></span>
+                            </div>
+                          
+                            <span>4.6(4,949건) 월 99,999+개 구매</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul id="second" class="d-flex justify-content-between align-items-center">
+                    <li>
+                        <a href="#">
+                            <img src="img/item_10.jpeg" alt="우유">
+                        </a>
+                        <a href="#">
+                            <span>항공직송 생연어(횟감용) 노르웨이산/100G</span>
+                        </a>
+                        <br>
+                        <br>
+                        <span></span>
+                            <div class="price">
+                                <span></span>
+                                <span>3,890</span>
+                                <span>원</span>
+                                <span>(100G 당 3,890원)</span>
+                            </div>
+                            <br>
+                            <span>4.6(9,316건) 월 32,241개 구매</span>
+                            
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/item_11.jpeg" alt="꼼장어볶음">
+                        </a>
+                        <a href="#">
+                           
+                            <span>[몽블랑제]갈릭 찰파이 8입</span>
+                        </a>
+                        <br>
+                        <br>
+                            <span><strong>6,490</strong>원</span> 
+                            <br>
+                            <div class="price">
+                                <span><strong>30</strong>%</span>
+                                <span>4,490</span>
+                                <span>원</span>
+                                <span>(1개당 561.3원)</span>
+                            </div>
+                          
+                            <span>47(4,087건) 월 1,659개 구매</span>
+                            
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/item_12.jpeg" alt="고기">
+                        </a>
+                        <a href="#">
+                            
+                            <span>부드러운 복숭아 1.5KG(박스)</span>
+                        </a>
+                        <br>
+                        <br>
+                            <span><strong>14,990</strong>원</span> 
+                            <br>
+                            <div class="price">
+                                <span><strong>26</strong>%</span>
+                                <span>10,990</span>
+                                <span>원</span>
+                                <span>(100G 당 732.7원)</span>
+                            </div>
+                           
+                            <span>4.3(2,630건) 월 13,904개 구매</span>
+                            
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <button class="button">
+            <a href="#none">
+                <img src="img/refresh.svg" alt="리프레쉬">
+                <span><strong>다음 상품</strong> 새로보기<strong>1</strong>/6</span>
+            </a>
+        </button>
     </section>
     </div>
+
+    </section>
     <script>
 
 
