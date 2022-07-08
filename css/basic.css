@@ -43,8 +43,11 @@ body{
 }
 input[type="text"]::placeholder {
     padding-left: 20px;
-    font-size: 1.1em;
+    font-size: 0.9em;
     
+}
+.search input:focus-visible{
+    border: none;
 }
 
 .search button{
@@ -128,9 +131,13 @@ input[type="text"]::placeholder {
 }
 
 #minibanner{
+    width: 1200px;
     margin: 50px auto;
 }
 
+#saza{
+    width: 1200px;
+}
 #saza img{
     display: block;
     margin: 0 auto 40px;
@@ -297,4 +304,23 @@ input[type="text"]::placeholder {
 .button span{
     font-weight: 300;
     font-size: 17px;
+}
+
+.containers{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.swiper{
+    width: 1200px !important;
+    overflow:visible;
+}
+
+.swiper-slide{
+    padding: 10px;
+}
+
+.swiper-slide img{
+    width: 100%;
 }

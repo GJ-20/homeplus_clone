@@ -34,7 +34,7 @@
 <body>
     
     <header id="hd">
-        <div class="container">
+        <div class="containers">
             <div class="top d-flex justify-content-between align-items-center">
                 <h1>
                     <a href="#none"><img src="img/default_logo.png" alt="로고"></a>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="navd">
-                    <ul class="d-flex justify-content-between align-items-end">
+                    <ul class="d-flex mb-0 justify-content-between align-items-end">
                         
                         <li><a href="#none">카테고리</a></li>
                         <li><a href="#none">전단행사</a></li>
@@ -66,7 +66,7 @@
             
         </div>
     </header>
-    <section id="banner container" style="border-bottom: 1px solid #eee;">
+    <section id="banner containers" style="border-bottom: 1px solid #eee;">
         <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -97,7 +97,7 @@
         </ul>
     </section>
 
-    <div class="container">
+    <div class="containers">
 
     <section id="minibanner">
         <div class="swiper">
@@ -880,6 +880,7 @@
         const swiper = new Swiper('.swiper', {
   // Optional parameters
   autoplay: { delay: 3000,},
+  spaceBetween: 0,
   loop: true,
 
   // If we need pagination
